@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rotiserie Lucvero</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0 1rem 2rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      scroll-behavior: smooth;
+      color: #222;
+      position: relative;
+      background: url('https://i.postimg.cc/9fn2RFzj/locatie.png') no-repeat center center fixed;
+      background-size: cover;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(245, 240, 230, 0.5);
+      z-index: -1;
+    }
+    header {
+      background-color: #fff;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: background-color 0.2s;
+    }
+    nav a:hover {
+      background-color: #ddd;
+    }
+    h1, h2 {
+      text-align: center;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      max-width: 400px;
+      margin: 0 auto 3rem;
+    }
+    li {
+      background: #fff;
+      margin-bottom: 0.8rem;
+      padding: 1rem 1.5rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-size: 1.2rem;
+      text-align: center;
+    }
+    section {
+      margin-bottom: 3rem;
+    }
+    p, a {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #222;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+    }
+    a {
+      font-weight: bold;
+    }
+    #location a {
+      color: inherit;
+      text-decoration: underline;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+    #location a:hover {
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      padding: 1rem 0;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#menu">Meniu</a>
+      <a href="#location">Locație</a>
+      <a href="#contact">Contact</a>
+      <a href="#reviews">Recenzii</a>
+    </nav>
+  </header>
+
+  <section id="menu">
+    <h1>Meniul nostru</h1>
+    <ul>
+      <li>Cârnaț de porc</li>
+      <li>Pui rotisat</li>
+      <li>Pulpe rotisate</li>
+      <li>Șnițele</li>
+      <li>Orez</li>
+      <li>Pireu</li>
+      <li>Ciorba de burtă</li>
+    </ul>
+  </section>
+
+  <section id="location">
+    <h2><a href="https://maps.app.goo.gl/vrtv4VrBxD2unNaPA" target="_blank" rel="noopener noreferrer">Locația noastră</a></h2>
+    <p>Piața București 2C, Oradea</p>
+    <div style="display:flex; justify-content:center; margin-top:1rem;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2724.937833223529!2d21.918491715993425!3d47.07223357915181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4748a173621d6af9%3A0x30ac0a5f9a8306a8!2sPia%C8%9Ba%20Bucure%C8%99ti%202C%2C%20Oradea!5e0!3m2!1sro!2sro!4v1687879000000!5m2!1sro!2sro"
+        width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Sunați-ne pentru comenzi și informații:</p>
+    <p><a href="tel:0751175079">0751 175 079</a></p>
+  </section>
+
+  <section id="reviews">
+    <h2>Recenzii</h2>
+    <p>⭐⭐⭐⭐⭐ - „Serviciu impecabil și gust excelent!”</p>
+    <p>⭐⭐⭐⭐⭐ - „Cel mai bun pui rotisat din oraș, recomand cu drag!”</p>
+    <p>⭐⭐⭐⭐⭐ - „Mâncare gustoasă și servire rapidă, mereu mulțumit!”</p>
+    <p>⭐⭐⭐⭐⭐ - „Locul perfect pentru o masă delicioasă în cartier.”</p>
+    <p>⭐⭐⭐⭐⭐ - „Atmosferă plăcută și produse de calitate.”</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Rotiserie Lucvero. Toate drepturile rezervate.
+  </footer>
+</body>
+</html>
